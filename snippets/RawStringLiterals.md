@@ -8,7 +8,7 @@ Console.WriteLine(x);
 
 // <PackageReference Include="ScribanSourceGenerator" Version="1.0.0" />
 
-[ScribanSourceGeneretor.ClassMember(@"{{
+[ScribanSourceGenerator.ClassMember(@"{{
 $types = [""bool"",""byte"",""sbyte"",""short"",""ushort"",""int"",""uint"",""long"",""ulong"",""float"",""double"",""DateTime"",""DateTimeOffset"",""TimeSpan""]
 for $t in $types
 ~}}
@@ -27,7 +27,7 @@ Console.WriteLine(x);
 
 // <PackageReference Include="ScribanSourceGenerator" Version="1.0.0" />
 
-[ScribanSourceGeneretor.ClassMember("""
+[ScribanSourceGenerator.ClassMember("""
     {{
     $types = ["bool","byte","sbyte","short","ushort","int","uint","long","ulong","float","double","DateTime","DateTimeOffset","TimeSpan"]
     for $t in $types
@@ -70,7 +70,7 @@ partial class X {
 ## C# 10
 
 ```cs
-[ScribanSourceGeneretor.ClassMember(@"{{
+[ScribanSourceGenerator.ClassMember(@"{{
 $types = [""byte"",""int""]
 for $t in $types
 ~}}
@@ -87,7 +87,7 @@ static partial class X
 ## C# 11
 
 ```cs
-[ScribanSourceGeneretor.ClassMember(""""
+[ScribanSourceGenerator.ClassMember(""""
     {{
     $types = ["byte","int"]
     for $t in $types
